@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-contact{
+    background-color: var(--content_background);
+    min-height: 100vh;
+}
+
+.main-content-contact{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--contact_form_text);
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+.contact-details{
+    margin-top: 32px;
+}
+
+.contact-details>h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-weight: normal;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contact-details>h1{
+    font-size: 24px;
+}
+
+.contact-socials{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
+
+
+

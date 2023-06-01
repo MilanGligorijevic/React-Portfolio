@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* :root{
+    --orange: invert(45%) sepia(98%) saturate(1095%) hue-rotate(350deg) brightness(100%) contrast(101%);;
+    --grey: invert(14%) sepia(37%) saturate(110%) hue-rotate(315deg) brightness(97%) contrast(82%);
+} */
+
+.socials-img {
+    filter: var(--grey_socials);
+    height: 72px;
+    width: 72px;
+    transition-duration: 0.25s;
+}
+
+.imgs-social{
+    display: flex;
+    gap: 40px;
+}
+
+.socials-a:hover{
+    .socials-img{
+        filter: var(--orange_socials);
+    } 
+}
+
