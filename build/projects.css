@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-projects{
+    background-color: var(--content_background);
+    min-height: 100vh;
+}
+
+.projects-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects>h1{
+    color: var(--content_title);
+    font-size: 35px;
+    margin-top: 40px;
+    transition-duration: 0.25s;
+}
+.projects>h1:hover{
+    color: #FF7315;
+}
