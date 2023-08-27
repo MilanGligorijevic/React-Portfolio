@@ -15,8 +15,8 @@ function About(){
                     Also I design and make small games from time to time. 
                     Video games and computers are my greatest passions! 🎮
                 </div>
-                <div className="resume-text">Feel free to contact me via my Contact page or you can download my resume <a href="https://drive.google.com/file/d/19X9ZQlqof4IBNt2ZphBJCALph_5mwbO1/view?usp=sharing" className="link-cv">here</a></div>
-                <img className="cv" src="./cvimage.jpg"/>
+                <div className="resume-text">Feel free to contact me via my Contact page or you can download my resume <a href="https://drive.google.com/file/d/1CRJWDKG6OK5p3kxMl0eOZMSous3ogwwd/view?usp=sharing" className="link-cv">here</a></div>
+                <img className="cv" src="./cvimage.png"/>
             </div>
             <div className="contact-socials">
                 <Socials />
