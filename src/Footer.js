@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(){
     return (
-        <footer className="footer">
+        <div className="footer">
             <div className="footer-content">
                     <div>
                         © 2023 
@@ -17,7 +17,7 @@ function Footer(){
                         MG
                 </a>    
             </div>
-        </footer>
+        </div>
     )
 }
 

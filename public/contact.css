@@ -5,20 +5,26 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+
+
+
 .main-contact{
     background-color: var(--content_background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 .main-content-contact{
-    
     display: flex;
     justify-content: center;
     align-items: flex-start;
     color: var(--contact_form_text);
     gap: 30px;
     margin-top: 100px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
+    flex: 1;
 }
 
 .contact-details{

@@ -7,6 +7,9 @@
 
 .main-about{
     background-color: var(--content_background);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* .cv-image{
@@ -31,6 +34,7 @@
     align-items: center;
     flex-direction: column;
     color: var(--content_text);
+    flex: 1;
 }
 
 .main-content-about>h1{
