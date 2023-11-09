@@ -3,6 +3,7 @@ import React from "react";
 function ProjectCard(props){
     return (
         <div className="flip-project-card">
+            <a href={props.url} className="project-card-link-mobile">
             <div className="project-card">
                 <div className="card-back">
                     <div className="about">
@@ -19,6 +20,8 @@ function ProjectCard(props){
                     </div>
                 </div>
             </div>
+            </a>
+            
         </div>
     )
 }

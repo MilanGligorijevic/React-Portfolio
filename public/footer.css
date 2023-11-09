@@ -3,16 +3,17 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 17px;
+    font-size: 62.5%;
 }
 
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
+    height: 7.5rem;
     color: var(--footer_text);
     background-color: var(--footer_background);
+    
 }
 
 .footer-content{
@@ -20,7 +21,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 5px;
+    gap: .5rem;
+    font-size: 2.5rem;
 }
 
 .link-footer{
@@ -35,5 +37,17 @@
 .link-footer:hover{
     color: #FF7315;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 56.25em) {
+    .footer-content{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .footer-content{
+        font-size: 2.1rem;
+    }
 }
 

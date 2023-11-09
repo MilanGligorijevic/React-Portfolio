@@ -3,49 +3,56 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
 }
 
 
 .contactform-form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     height: fit-content;
     width: fit-content;
     background-color: var(--contact_form_background);
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+
 }
 
 .input-field{
-    height: 55px;
-    width: 480px;
+    height: 5.5rem;
+    width: 48rem;
     border: 1px solid var(--contact_form_text);
-    border-radius: 20px;
+    border-radius: 2rem;
     background-color: #F4F4F4;
-    padding-left: 10px;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+
 }
 
 .text-area{
-    height: 90px;
-    width: 480px;
-    border-radius: 20px;
+    height: 9rem;
+    width: 48rem;
+    border-radius: 2rem;
     border: 1px solid var(--contact_form_text);
     background-color: #F4F4F4;
     padding-left: 10px;
-    padding-top: 6px;
+    padding-top: .6rem;
     resize: vertical;
+    
 }
 
 .submit-button{
-    height: 58px;
-    width: 480px;
-    border-radius: 20px;
+    height: 5.8rem;
+    width: 48rem;
+    border-radius: 2rem;
     border: 1px solid var(--contact_form_button);
     color: var(--contact_form_button_text);
     background-color: var(--contact_form_button);
-    margin-top: 10px;
+    margin-top: 1rem;
     transition-duration: 0.6s;
+    font-size: 1.6rem;
 }
 
 .submit-button:hover{
@@ -55,6 +62,42 @@
 }
 
 .contactform-form>h1{
-    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+@media screen and (max-width: 56.25em) {
+    .input-field, .submit-button {
+        height: 5.2rem;
+        width: 42rem;
+        font-size: 1.5rem;
+    }
+    .text-area{
+        height: 14rem;
+        width: 42rem;
+    }
+    .contactform-form>h1{
+        font-size: 2.2rem;
+    }
+    .contactform-form{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .input-field, .submit-button{
+        height: 4.8rem;
+        width: 38rem;
+        font-size: 1.3rem;
+    }
+    .text-area{
+        height: 12rem;
+        width: 38rem;
+    }
+    .contactform-form>h1{
+        font-size: 2rem;
+    }
+    .contactform-form{
+        font-size: 2.1rem;
+    }
 }
 

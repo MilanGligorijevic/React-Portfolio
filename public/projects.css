@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
 }
 
 .main-projects{
@@ -17,9 +18,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    gap: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 
 .projects{
@@ -32,10 +33,34 @@
 
 .projects>h1{
     color: var(--content_title);
-    font-size: 35px;
-    margin-top: 40px;
+    font-size: 3.5rem;
+    margin-top: 4rem;
     transition-duration: 0.25s;
 }
 .projects>h1:hover{
     color: #FF7315;
+}
+
+@media screen and (max-width: 56.25em) {
+    .projects>h1{
+        font-size: 2.8rem;
+        margin-top: 3.5rem;
+    }
+    .projects-div{
+        gap: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .projects>h1{
+        font-size: 2.4rem;
+        margin-top: 3.3rem;
+    }
+    .projects-div{
+        gap: 2.4rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
 }

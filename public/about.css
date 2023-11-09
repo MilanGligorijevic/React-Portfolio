@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
 }
 
 .main-about{
@@ -23,9 +24,11 @@
     justify-content: center;
     align-items: center;
     height: fit-content;
-    width: 590px;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    width: 59rem;
+    margin-bottom: 3rem;
 }
+
 
 .main-content-about{
     min-height: 100vh;
@@ -38,8 +41,8 @@
 }
 
 .main-content-about>h1{
-    font-size: 35px;
-    margin: 30px;
+    font-size: 3.5rem;
+    margin: 3rem;
     transition-duration: 0.25s;
 }
 .main-content-about>h1:hover{
@@ -47,16 +50,65 @@
 }
 
 .resume-text{
-    width: 590px;
-    margin-bottom: 30px;
+    width: 59rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 .link-cv{
     color: var(--content_text);
     transition-duration: 0.25s;
+    font-size: 1.5rem;
 }
 
 .link-cv:hover{
     color: #FF7315;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 56.25em) {
+    .main-content-about>h1{
+        font-size: 2.8rem;
+        margin: 2.5rem;
+    }
+    .text-field{
+        font-size: 1.5rem;
+    }
+
+    .resume-text{
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .link-cv{
+        color: var(--content_text);
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .main-content-about>h1{
+        font-size: 2.4rem;
+        margin: 2.3rem;
+    }
+    .text-field{
+        font-size: 1.3rem;
+        width: 96vw;
+        margin-bottom: 3rem;
+    }
+
+    .resume-text{
+        margin-bottom: 2.3rem;
+        font-size: 1.3rem;
+        width: 96vw;
+    }
+    
+    .link-cv{
+        color: var(--content_text);
+        font-size: 1.3rem;
+    }
+
+    .cv{
+        width: 96vw;
+    }
 }

@@ -1,4 +1,12 @@
 *{
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
+/* MEDIA QUERY 
+0 - 600px (37.5em): phone
+600 - 900px (56.25em): tablet protrait DONE
+900 - 1200px (75em): tablet landscape DONE
+1200 - 1800px (112.5em): normal style DONE
+1800px+: big desktop 
+*/

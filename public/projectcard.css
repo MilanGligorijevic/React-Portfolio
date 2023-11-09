@@ -3,10 +3,11 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
 }
 
 .flip-project-card{
-    perspective: 1000px;
+    perspective: 100rem;
 }
 
 .project-card{
@@ -15,8 +16,8 @@
     transform-style: preserve-3d;
 
     border-radius: 0.75rem;
-    height: 350px;
-    width: 250px;
+    height: 35rem;
+    width: 25rem;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 
     transition: transform 1350ms;
@@ -33,7 +34,7 @@
     width: 100%;
     border-radius: 0.75rem;
     color: var(--project_card_text);
-
+    font-size: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,19 +58,84 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 12px;
-    gap: 12px;
+    padding: 1.2rem;
+    gap: 1.2rem;
 }
 
-.about>h1{
-    font-size: 22px;
+/* .project-card-link-mobile{
+    pointer-events: none;
+    cursor: default;
+} */
+
+.about>h2{
+    font-size: 2.7rem;
 }
 
 .img-box{
-    width: 250px;
-    height: 250px;
+    width: 25rem;
+    height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@media screen and (max-width: 75em){
+    .project-card{
+        transition: none;
+        height: 32rem;
+        width: 20.5rem;
+    }
+    .project-card:hover{
+        transform: none;
+    }
+    .card-back{
+        display: none;
+    }
+    .img-box{
+        width: 20.5rem;
+        height: 20.5rem;
+    }
+}
+
+@media screen and (max-width: 56.25em){
+    .project-card{
+        transition: none;
+        height: 30rem;
+        width: 20.5rem;
+    }
+    .project-card:hover{
+        transform: none;
+    }
+    .card-back{
+        display: none;
+    }
+    .img-box{
+        width: 20rem;
+        height: 20rem;
+    }
+    .card-front{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 37.5em){
+    .project-card{
+        transition: none;
+        height: 31rem;
+        width: 27rem;
+        margin: 0 10rem;
+    }
+    .project-card:hover{
+        transform: none;
+    }
+    .card-back{
+        display: none;
+    }
+    .img-box{
+        width: 24rem;
+        height: 24rem;
+    }
+    .card-front{
+        font-size: 2.7rem;
+    }
+}

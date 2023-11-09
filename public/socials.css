@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
 }
 
 /* :root{
@@ -12,19 +13,33 @@
 
 .socials-img {
     filter: var(--grey_socials);
-    height: 72px;
-    width: 72px;
+    height: 7.2rem;
+    width: 7.2rem;
     transition-duration: 0.25s;
 }
 
 .imgs-social{
     display: flex;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .socials-a:hover{
     .socials-img{
         filter: var(--orange_socials);
     } 
+}
+
+@media screen and (max-width: 56.25em) {
+    .socials-img {
+        height: 6.4rem;
+        width: 6.4rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .socials-img {
+        height: 5.4rem;
+        width: 5.4rem;
+    }
 }
 

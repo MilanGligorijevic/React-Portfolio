@@ -6,7 +6,6 @@ import projectData from "./projectData";
 import Socials from "./Socials";
 
 function Projects(){
-    //SREDI PROJECT KARTICE DA PRIKAZUJU PRAVI CONTENT (ISPRAVI IKONICE, SREDI TEXT I LINKOVE)
     const [data, setData] = React.useState([]);
 
     function addCardData(){
@@ -28,11 +27,11 @@ function Projects(){
             <div className="projects">
                 <h1>Projects portfolio</h1> 
                 <div className="projects-div">
-                {data.map(item => 
-                {
+                    {data.map(item => 
+                    {
                     return <ProjectCard name={item.name} url={item.url} img={item.img} about={item.about}/>
-                }   
-                )}
+                    }   
+                    )}
                 </div>
             </div>
             <div className="contact-socials">
