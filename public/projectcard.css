@@ -1,65 +1,64 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 62.5%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 62.5%;
 }
 
-.flip-project-card{
-    perspective: 100rem;
+.flip-project-card {
+  perspective: 100rem;
 }
 
-.project-card{
-    position: relative;
+.project-card {
+  position: relative;
 
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
-    border-radius: 0.75rem;
-    height: 35rem;
-    width: 25rem;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 0.75rem;
+  height: 35rem;
+  width: 25rem;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 
-    transition: transform 1350ms;
+  transition: transform 1350ms;
 }
 
-.project-card:hover{
-    transform: rotateY(180deg);
+.project-card:hover {
+  transform: rotateY(180deg);
 }
 
 .card-back,
-.card-front{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 0.75rem;
-    color: var(--project_card_text);
-    font-size: 2.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.card-front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
+  color: var(--project_card_text);
+  font-size: 2.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    backface-visibility: hidden;
-
+  backface-visibility: hidden;
 }
 
-.card-front{
-    background-color: var(--project_card_front);
+.card-front {
+  background-color: var(--project_card_front);
 }
 
-.card-back{
-    background-color: var(--project_card_back);
-    transform: rotateY(180deg);
+.card-back {
+  background-color: var(--project_card_back);
+  transform: rotateY(180deg);
 }
 
-.about{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 1.2rem;
-    gap: 1.2rem;
+.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.2rem;
+  gap: 1.2rem;
 }
 
 /* .project-card-link-mobile{
@@ -67,75 +66,75 @@
     cursor: default;
 } */
 
-.about>h2{
+.about > h2 {
+  font-size: 2.7rem;
+}
+
+.img-box {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 75em) {
+  .project-card {
+    transition: none;
+    height: 32rem;
+    width: 20.5rem;
+  }
+  .project-card:hover {
+    transform: none;
+  }
+  .card-back {
+    display: none;
+  }
+  .img-box {
+    width: 20.5rem;
+    height: 20.5rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .project-card {
+    transition: none;
+    height: 30rem;
+    width: 20.5rem;
+  }
+  .project-card:hover {
+    transform: none;
+  }
+  .card-back {
+    display: none;
+  }
+  .img-box {
+    width: 20rem;
+    height: 20rem;
+  }
+  .card-front {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .project-card {
+    transition: none;
+    height: 31rem;
+    width: 27rem;
+    margin: 0 10rem;
+  }
+  .project-card:hover {
+    transform: none;
+  }
+  .card-back {
+    display: none;
+  }
+  .img-box {
+    width: 23rem;
+    height: 23rem;
+  }
+  .card-front {
     font-size: 2.7rem;
-}
-
-.img-box{
-    width: 25rem;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 75em){
-    .project-card{
-        transition: none;
-        height: 32rem;
-        width: 20.5rem;
-    }
-    .project-card:hover{
-        transform: none;
-    }
-    .card-back{
-        display: none;
-    }
-    .img-box{
-        width: 20.5rem;
-        height: 20.5rem;
-    }
-}
-
-@media screen and (max-width: 56.25em){
-    .project-card{
-        transition: none;
-        height: 30rem;
-        width: 20.5rem;
-    }
-    .project-card:hover{
-        transform: none;
-    }
-    .card-back{
-        display: none;
-    }
-    .img-box{
-        width: 20rem;
-        height: 20rem;
-    }
-    .card-front{
-        font-size: 2.5rem;
-    }
-}
-
-@media screen and (max-width: 37.5em){
-    .project-card{
-        transition: none;
-        height: 31rem;
-        width: 27rem;
-        margin: 0 10rem;
-    }
-    .project-card:hover{
-        transform: none;
-    }
-    .card-back{
-        display: none;
-    }
-    .img-box{
-        width: 24rem;
-        height: 24rem;
-    }
-    .card-front{
-        font-size: 2.7rem;
-    }
+  }
 }
